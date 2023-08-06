@@ -1,4 +1,4 @@
-HAProxy with jsha/minica
+Try Lit with Vite
 ===
 
 Modify virtual host's name
@@ -10,7 +10,7 @@ Export certs
 ---
 
 ```shell
-docker container cp haproxy-with-minica-haproxy-1:/usr/local/etc/haproxy/certs - | tar xv
+docker container cp try-vite-lit-haproxy-1:/usr/local/etc/haproxy/certs - | tar xv
 ```
 
 Install trusted root certification
