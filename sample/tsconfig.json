@@ -18,7 +18,10 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* plugins */
+    "plugins": [{ "name": "ts-lit-plugin" }]
   },
   "include": ["src", ".storybook/preview.ts"],
   "references": [{ "path": "./tsconfig.node.json" }, { "path": "./jsconfig.json" }]
