@@ -8,6 +8,8 @@ module.exports = {
         "eslint:recommended",
         "plugin:@typescript-eslint/strict-type-checked",
         "plugin:@typescript-eslint/stylistic-type-checked",
+        "plugin:wc/recommended",
+        "plugin:lit/recommended",
         "plugin:storybook/recommended"
     ],
     "overrides": [
@@ -34,7 +36,9 @@ module.exports = {
     },
     "plugins": [
         "@typescript-eslint",
-        "storybook"
+        "storybook",
+        "wc",
+        "lit"
     ],
     "rules": {
     }
