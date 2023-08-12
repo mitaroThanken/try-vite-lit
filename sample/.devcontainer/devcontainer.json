@@ -17,10 +17,13 @@
 				"SonarSource.sonarlint-vscode",
 				"mhutchie.git-graph",
 				"eamodio.gitlens",
-				"runem.lit-plugin"
+				"runem.lit-plugin",
+				"esbenp.prettier-vscode",
+				"EditorConfig.EditorConfig"
 			],
 			"settings": {
-    			"typescript.tsdk": "node_modules/typescript/lib"
+    		"typescript.tsdk": "node_modules/typescript/lib",
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
 			}
 		}
 	},
