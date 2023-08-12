@@ -6,13 +6,18 @@ module.exports = {
     },
     "extends": [
         "eslint:recommended",
-        "plugin:@typescript-eslint/recommended"
+        "plugin:@typescript-eslint/strict-type-checked",
+        "plugin:@typescript-eslint/stylistic-type-checked",
+        "plugin:storybook/recommended"
     ],
     "overrides": [
         {
             "env": {
                 "node": true
             },
+            "extends": [
+                "plugin:@typescript-eslint/disable-type-checked"
+            ],
             "files": [
                 ".eslintrc.{js,cjs}"
             ],
@@ -24,10 +29,12 @@ module.exports = {
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaVersion": "latest",
-        "sourceType": "module"
+        "sourceType": "module",
+        "project": ["./tsconfig.json", "./tsconfig.node.json", "./jsconfig.json"]
     },
     "plugins": [
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "storybook"
     ],
     "rules": {
     }
