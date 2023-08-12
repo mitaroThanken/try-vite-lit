@@ -3,9 +3,9 @@ import { html } from 'lit';
 import { Button } from './Button';
 import './header.css';
 
-type User = {
+interface User {
   name: string;
-};
+}
 
 export interface HeaderProps {
   user?: User;

@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "lint": "eslint .",
+    "build": "npm run lint && tsc && vite build",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build-storybook": "npm run lint && storybook build",
     "preview-storybook": "vite preview --outDir storybook-static"
   },
   "dependencies": {
@@ -21,6 +22,12 @@
     "@storybook/web-components": "^7.2.3",
     "@storybook/web-components-vite": "^7.2.3",
     "@types/node": "^18.17.4",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
+    "eslint": "^8.47.0",
+    "eslint-plugin-lit": "^1.9.1",
+    "eslint-plugin-storybook": "^0.6.13",
+    "eslint-plugin-wc": "^1.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.2.3",

@@ -33,7 +33,7 @@ export const Button = ({ primary, backgroundColor, size, label, onClick }: Butto
   return html`
     <button
       type="button"
-      class=${['storybook-button', `storybook-button--${size || 'medium'}`, mode].join(' ')}
+      class=${['storybook-button', `storybook-button--${size ?? 'medium'}`, mode].join(' ')}
       style=${styleMap({ backgroundColor })}
       @click=${onClick}
     >
