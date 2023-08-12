@@ -2,9 +2,9 @@ import { html } from 'lit';
 import { Header } from './Header';
 import './page.css';
 
-type User = {
+interface User {
   name: string;
-};
+}
 
 export interface PageProps {
   user?: User;
